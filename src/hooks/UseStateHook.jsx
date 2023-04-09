@@ -36,7 +36,7 @@ function UseStateHook() {
       <br />
       <input placeholder="enter surname" onChange={onChangeHandler} />
       <h3>{surname}</h3>
-      <small>2. using "onInput" attribute</small>
+      <small>2. using "onChange" attribute</small>
     </>
   );
 }
