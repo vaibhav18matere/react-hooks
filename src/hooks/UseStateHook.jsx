@@ -24,18 +24,19 @@ function UseStateHook() {
 
   return (
     <>
-      <h4>counter : {counter}</h4>
+      <h2 className="hook">1. UseState Hook</h2>
+      <h5>counter : {counter}</h5>
       <button onClick={incrementCountHandler}>Increment</button>
       <button onClick={() => setCounter(counter - 1)}>Decreament</button>
       <br />
       <br />
       <input placeholder="enter name" onInput={(e) => inputTextHandler(e)} />
-      <h3>{inputValue}</h3>
+      <h5>{inputValue}</h5>
       <small>1. using "onInput" attribute</small>
       <br />
       <br />
       <input placeholder="enter surname" onChange={onChangeHandler} />
-      <h3>{surname}</h3>
+      <h5>{surname}</h5>
       <small>2. using "onChange" attribute</small>
     </>
   );

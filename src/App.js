@@ -1,11 +1,12 @@
 import "./App.css";
+import UseReducerHook from "./hooks/UseReducerHook";
 import UseStateHook from "./hooks/UseStateHook";
 
 function App() {
   return (
     <div className="App">
-      <h1>React hooks</h1>
       <UseStateHook />
+      <UseReducerHook />
     </div>
   );
 }
