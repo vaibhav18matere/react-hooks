@@ -1,6 +1,6 @@
 *{
   box-sizing: border-box;
-  margin:0;
+  margin:1rem;
   padding:0
 }
 .App {
@@ -13,4 +13,7 @@
 button{
   margin:0.5rem;
   padding:5px;
+}
+input{
+  margin:0.5rem;
 }
