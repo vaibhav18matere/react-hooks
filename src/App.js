@@ -5,6 +5,7 @@ import UseEffectHook from "./hooks/UseEffectHook";
 import UseRefHook from "./hooks/UseRefHook";
 import UseLayoutEffect from "./hooks/UseLayoutEffect";
 import UseImperativeHandleHook from "./hooks/UseImperativeHandleHook";
+import UseContextHook from "./hooks/UseContextHook";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <UseRefHook />
       <UseLayoutEffect />
       <UseImperativeHandleHook />
+      <UseContextHook />
     </div>
   );
 }
