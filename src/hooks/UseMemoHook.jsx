@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import axios from "axios";
 
 function UseMemoHook() {
@@ -29,10 +29,22 @@ function UseMemoHook() {
     return longestName;
   };
 
+  const getLongestName = useMemo(() => {
+    findLongestName(data);
+  }, [data]);
+
+  //      to check memoised value change, input something else; for example counter, text or any other state value
+  //   const getLongestName = useMemo(() => {
+  //     findLongestName(data);
+  //   }, [text]);
+
   return (
     <>
       <h2 className="hook">UseMemoHook</h2>
-      <p>{findLongestName(data)}</p>
+      {/* <p>{findLongestName(data)}</p> */}
+      <p>{getLongestName}</p>
+      {/* now after clicking the console value is not printing because we are memoising the longestName and it will only change when dependency i.e. [data] is changed*/}
+
       <button
         onClick={() => {
           setText(!text);
