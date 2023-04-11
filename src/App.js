@@ -3,6 +3,7 @@ import UseStateHook from "./hooks/UseStateHook";
 import UseReducerHook from "./hooks/UseReducerHook";
 import UseEffectHook from "./hooks/UseEffectHook";
 import UseRefHook from "./hooks/UseRefHook";
+import UseLayoutEffect from "./hooks/UseLayoutEffect";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <UseReducerHook />
       <UseEffectHook />
       <UseRefHook />
+      <UseLayoutEffect />
     </div>
   );
 }
